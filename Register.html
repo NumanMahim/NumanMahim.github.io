@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <form id="registration-form" class="form">
+
+            <h1 class="form-title">Create an Account</h1>
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" required>
+<!-- Add this code to your HTML form -->
+<div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+</div>
+<div class="form-group">
+    <label for="confirm-password">Confirm Password</label>
+    <input type="password" id="confirm-password" name="confirm-password" required>
+    <p class="password-warning" id="password-warning">Passwords do not match.</p>
+</div>
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

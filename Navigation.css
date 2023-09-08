@@ -1,0 +1,59 @@
+/* Navigation.css */
+
+/* Style the top-level navigation */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 5px 10px;
+    background-color: #333; /* Background color for top-level links */
+}
+
+nav ul li a:hover {
+    color: #ff5733; /* Change the color on hover */
+    background-color: #555; /* Change the background color on hover */
+}
+
+/* Style the sports dropdown menu */
+.sports-dropdown {
+    position: relative;
+    
+}
+
+.sports-menu {
+    display: none;
+    position: absolute; /* Use 'absolute' for proper positioning */
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 150px;
+    padding: 10px 0; /* Add padding to create space around the items */
+    margin-bottom: 20px;
+}
+
+.sports-menu li {
+    padding-bottom: 20px;
+    margin-bottom: 20px; /* Add margin between each item */
+}
+
+.sports-menu li:last-child {
+    border-bottom: none;
+}
+
+.sports-dropdown:hover .sports-menu {
+    display: block;
+}
